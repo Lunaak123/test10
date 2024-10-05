@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="operations">
+            <h1>Operations Panel</h1>
+
+            <!-- Step 1: Primary Column Selection -->
+            <label for="primary-column">Choose Primary Column (ID):</label>
+            <select id="primary-column"></select>
+
+            <!-- Step 2: Column Selection for Operation -->
+            <label for="operation-columns">Choose Columns to Operate On:</label>
+            <div id="operation-columns"></div>
+
+            <!-- Step 3: Choose Operation (Null/Not Null) -->
+            <label for="operation">Choose Operation:</label>
+            <select id="operation">
+                <option value="null">Null</option>
+                <option value="not-null">Not Null</option>
+            </select>
+
+            <!-- Button to Apply Operations -->
+            <button id="apply-operation">Apply Operation</button>
+        </div>
+
+        <!-- Excel Sheet Data Display -->
+        <div id="sheet-content" class="sheet-content"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
